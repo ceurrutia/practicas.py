@@ -3,8 +3,6 @@
 Persona e imprimirlos por consola.'''
 
 #defino clase persona
-from typing import Any
-
 
 class Persona():
     #Inicializo clase
