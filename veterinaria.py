@@ -66,18 +66,21 @@ while i == 0:
 
   elif opcion == 2:
     opcion = input("¿Quieres agregar una nueva mascota?(si/no): ").lower()
+   #Valido que escriba solo si o no
     while opcion != "si" and opcion != "no":
       print("Opción no disponible, intentalo de nuevo.")
       break
     if opcion == "si":
       print("Agregala ingresando el numero 1")
     elif opcion == "no":
-      print("Usted ha salido con éxito. Seleccione en el menú para más opciones")
+      print("Has salido con éxito. Adiós")
+      exit()
 
   elif opcion == 3:
     print("Consulta de animales ingresados en el sistema: ")
     sistema()  #Trae la lista 
   elif opcion == 4:
+        print("Has salido con éxito. Adiós")
         exit()
   else:
     print("Opción inválida")
