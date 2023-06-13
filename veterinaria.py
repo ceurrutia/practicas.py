@@ -14,20 +14,21 @@ class Mascota():
     self.propietario = propietario
     self.telefono = telefono
     
-    
-
     #Creo el método string
 
     def __str__(self) -> str:
       return f' ID:{self.id}, {self.nombre}, {self.edad}, {self.animal}, {self.propietario}, {self.telefono}'
+
+
+
+#Función sistema muestra los animales registrados
+
 
 #creo la lista
 i = 0
 lista = []
 
 agrega_mascota = True
-
-#Función sistema muestra los animales registrados
 def sistema():
   k = 0
   while k < len(lista):
