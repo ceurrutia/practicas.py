@@ -18,10 +18,10 @@ def sistema():
     
 def eliminar_mascota(masc):
     orden = int(input("Ingrese el id de la mascota que desea eliminar: "))
-    #se recorre la lista, si encuentra un objeto con id igual al ingresado lo elimina
+    #Recorre  lista, elimina el que coincida
     for i in range(1, len(lista)):
         if lista[i].id == int(orden):
-            lista.remove(masc)
+            lista.remove(masc) #elimina registro ID
     print("Mascota eliminada de la lista")
 
 
@@ -77,8 +77,8 @@ while i == 0:
     sistema()  #Trae la lista
   elif opcion == 4:
         print("Eliminar mascota:")
-        eliminar_mascota(masc)
-        print()
+        eliminar_mascota(masc) #Elimina registro
+        print() 
      
   elif opcion == 5:
         print("Has salido con éxito. Adiós")
