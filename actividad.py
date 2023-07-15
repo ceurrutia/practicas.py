@@ -4,12 +4,18 @@ Persona e imprimirlos por consola.'''
 
 #defino clase persona
 
+from typing import Any
+
+
 class Persona():
     #Inicializo clase
 
     def __init__(self, nombre, edad):
         self.nombre = nombre
         self.edad = edad
+    
+    def __getattribute__(self,nombre):
+        pass
     
 Cecilia = Persona('Cecilia', '51')
 print(Cecilia)
